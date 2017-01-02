@@ -1,4 +1,4 @@
-
+#This function set and gets the matrix and its inverse and allows for it to be called by using the <<- operator
 
 makeCacheMatrix <- function(x = matrix()) {
   z <- NULL
@@ -17,6 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
+# This function pulls the inverse of a provided matrix
 cacheSolve <- function(x, ...) {
   z <- x$get_inv()
   if(!is.null(z)) {
